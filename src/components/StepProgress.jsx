@@ -1,11 +1,6 @@
-import {
-  Upload,
-  SlidersHorizontal,
-  Download,
-  Check,
-} from "lucide-react";
+import { Upload, SlidersHorizontal, Download } from "lucide-react";
 
-function StepProgress({ currentStep }) {
+function StepProgress({ step }) {
   const steps = [
     {
       number: 1,
@@ -28,83 +23,39 @@ function StepProgress({ currentStep }) {
   ];
 
   return (
-    <div className="step-progress-wrapper">
-      <div className="step-progress">
+    <div className="step-progress">
+      {steps.map((item, index) => {
+        const Icon = item.icon;
+        const isActive = step === item.number;
+        const isCompleted = step > item.number;
 
-        {steps.map((step, index) => {
-          const Icon = step.icon;
-
-          const isCompleted =
-            currentStep > step.number;
-
-          const isCurrent =
-            currentStep === step.number;
-
-          const isUpcoming =
-            currentStep < step.number;
-
-          return (
+        return (
+          <div className="progress-item-wrapper" key={item.number}>
             <div
-              className="step-item-wrapper"
-              key={step.number}
+              className={`progress-item ${
+                isActive ? "active" : ""
+              } ${isCompleted ? "completed" : ""}`}
             >
-
-              <div
-                className={[
-                  "step-item",
-                  isCompleted
-                    ? "completed"
-                    : "",
-                  isCurrent
-                    ? "current"
-                    : "",
-                  isUpcoming
-                    ? "upcoming"
-                    : "",
-                ].join(" ")}
-              >
-
-                <div className="step-circle">
-
-                  {isCompleted ? (
-                    <Check size={15} />
-                  ) : (
-                    <Icon size={15} />
-                  )}
-
-                </div>
-
-                <div className="step-text">
-
-                  <strong>
-                    {step.title}
-                  </strong>
-
-                  <span>
-                    {step.subtitle}
-                  </span>
-
-                </div>
-
+              <div className="progress-icon">
+                <Icon size={16} />
               </div>
 
-
-              {index < steps.length - 1 && (
-                <div
-                  className={
-                    currentStep >
-                    step.number
-                      ? "step-line completed"
-                      : "step-line"
-                  }
-                />
-              )}
-
+              <div className="progress-text">
+                <strong>{item.title}</strong>
+                <span>{item.subtitle}</span>
+              </div>
             </div>
-          );
-        })}
 
-      </div>
+            {index < steps.length - 1 && (
+              <div
+                className={`progress-line ${
+                  step > item.number ? "filled" : ""
+                }`}
+              />
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }

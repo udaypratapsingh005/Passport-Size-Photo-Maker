@@ -1,14 +1,14 @@
-import { Camera, LockKeyhole } from "lucide-react";
+import { Camera, ArrowLeft, ShieldCheck } from "lucide-react";
 
-function Header() {
+function Header({ step, onBack }) {
   return (
-    <header className="header">
-      <div className="brand">
+    <header className="app-header">
+      <div className="header-left">
         <div className="brand-icon">
-          <Camera size={25} />
+          <Camera size={28} strokeWidth={2.5} />
         </div>
 
-        <div className="brand-text">
+        <div>
           <h1>Passport Photo Maker</h1>
           <p>पासपोर्ट साइज फोटो मेकर</p>
         </div>
@@ -16,13 +16,16 @@ function Header() {
 
       <div className="header-right">
         <div className="privacy-badge">
-          <LockKeyhole size={15} />
+          <ShieldCheck size={15} />
           <span>Your photos stay on your device</span>
         </div>
 
-        <button className="back-btn" type="button">
-          ← Back
-        </button>
+        {step > 1 && (
+          <button className="back-button" onClick={onBack}>
+            <ArrowLeft size={16} />
+            Back
+          </button>
+        )}
       </div>
     </header>
   );

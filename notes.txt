@@ -1,0 +1,27 @@
+src/
+│
+├── components/
+│   ├── Header.jsx
+│   ├── StepProgress.jsx
+│   ├── PersonSelector.jsx
+│   ├── PersonCard.jsx
+│   ├── CropModal.jsx
+│   ├── PhotoControls.jsx
+│   ├── GenerateSheet.jsx
+│   ├── PreviewSheet.jsx
+│   └── DownloadButtons.jsx
+│
+├── routes/
+│   ├── PersonSelection.jsx
+│   ├── PhotoEditor.jsx
+│   └── PreviewPage.jsx
+│
+├── utils/
+│   ├── imageUtils.js
+│   ├── sheetGenerator.js
+│   └── downloadUtils.js
+│
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
