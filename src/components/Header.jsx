@@ -5,7 +5,7 @@ function Header({ step, onBack }) {
     <header className="app-header">
       <div className="header-left">
         <div className="brand-icon">
-          <img src="/favicon.svg" alt="Passport Photo Maker" width="28" height="28" />
+          <img src="./src/assets/favicon.svg" alt="Passport Photo Maker" width="28" height="28" />
         </div>
 
         <div>
