@@ -179,9 +179,12 @@ This project is deployed using **Vercel**.
 Add screenshots of your project here:
 
 ```md
-![Homepage](./)
-![Photo Editor](./screenshots/photo-editor.png)
-![Final Output](./screenshots/final-output.png)
+![Homepage](<img width="1366" height="607" alt="Screenshot (115)" src="https://github.com/user-attachments/assets/620e3e7a-9df0-459a-a725-c302c7645b3e" />
+)
+![Photo Editor]<img width="1366" height="641" alt="Screenshot (116)" src="https://github.com/user-attachments/assets/c6bb898a-eac9-42da-a402-aac1c8d18430" />
+
+![Final Output] <img width="1342" height="622" alt="Screenshot (117)" src="https://github.com/user-attachments/assets/1771d1f3-80f9-431d-a3b0-2f99502bedf0" />
+
 ```
 
 ---
