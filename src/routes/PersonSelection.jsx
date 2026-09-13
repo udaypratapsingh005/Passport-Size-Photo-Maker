@@ -8,10 +8,6 @@ function PersonSelection({ onSelect }) {
 
   return (
     <section className="selection-page">
-      <div className="plan-badge">
-        <span>●</span>
-        Monthly Plan - Valid till 12 Oct 2026
-      </div>
 
       <div className="selection-card">
         <div className="section-heading">
@@ -19,7 +15,6 @@ function PersonSelection({ onSelect }) {
 
           <h2>
             Select Number of Persons{" "}
-            <span>| व्यक्तियों की संख्या चुनें</span>
           </h2>
         </div>
 

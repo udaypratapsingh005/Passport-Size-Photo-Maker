@@ -4,15 +4,12 @@ import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 import PersonCard from "../components/PersonCard";
 import CropModal from "../components/CropModal";
 
-function PhotoEditor({ numberOfPersons, onNext }) {
-  const [people, setPeople] = useState(() =>
-    Array.from({ length: numberOfPersons }, (_, index) => ({
-      id: index + 1,
-      photo: null,
-      quantity: 4,
-    }))
-  );
-
+function PhotoEditor({
+  numberOfPersons,
+  people,
+  onPeopleUpdate,
+  onNext,
+}) {
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedPersonId, setSelectedPersonId] = useState(null);
 
@@ -23,6 +20,19 @@ function PhotoEditor({ numberOfPersons, onNext }) {
     () => people.filter((person) => person.photo).length,
     [people]
   );
+
+  const updatePerson = (personId, updates) => {
+    const updatedPeople = people.map((person) =>
+      person.id === personId
+        ? {
+            ...person,
+            ...updates,
+          }
+        : person
+    );
+
+    onPeopleUpdate(updatedPeople);
+  };
 
   const handleUpload = (personId) => {
     const input = document.createElement("input");
@@ -50,16 +60,9 @@ function PhotoEditor({ numberOfPersons, onNext }) {
   };
 
   const handleApplyCrop = (croppedImage) => {
-    setPeople((currentPeople) =>
-      currentPeople.map((person) =>
-        person.id === selectedPersonId
-          ? {
-              ...person,
-              photo: croppedImage,
-            }
-          : person
-      )
-    );
+    updatePerson(selectedPersonId, {
+      photo: croppedImage,
+    });
 
     setSelectedImage(null);
     setSelectedPersonId(null);
@@ -71,30 +74,16 @@ function PhotoEditor({ numberOfPersons, onNext }) {
   };
 
   const handleRemove = (personId) => {
-    setPeople((currentPeople) =>
-      currentPeople.map((person) =>
-        person.id === personId
-          ? {
-              ...person,
-              photo: null,
-              quantity: minQuantity,
-            }
-          : person
-      )
-    );
+    updatePerson(personId, {
+      photo: null,
+      quantity: minQuantity,
+    });
   };
 
   const handleQuantityChange = (personId, quantity) => {
-    setPeople((currentPeople) =>
-      currentPeople.map((person) =>
-        person.id === personId
-          ? {
-              ...person,
-              quantity,
-            }
-          : person
-      )
-    );
+    updatePerson(personId, {
+      quantity,
+    });
   };
 
   const handleContinue = () => {

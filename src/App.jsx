@@ -15,13 +15,27 @@ function App() {
   const [people, setPeople] = useState([]);
 
   const handlePersonsSelect = (count) => {
+    const initialPeople = Array.from(
+      { length: count },
+      (_, index) => ({
+        id: index + 1,
+        photo: null,
+        quantity: 4,
+      })
+    );
+
     setNumberOfPersons(count);
+    setPeople(initialPeople);
     setStep(2);
   };
 
   const handlePhotoEditorNext = (updatedPeople) => {
     setPeople(updatedPeople);
     setStep(3);
+  };
+
+  const handlePeopleUpdate = (updatedPeople) => {
+    setPeople(updatedPeople);
   };
 
   const handleBack = () => {
@@ -37,18 +51,25 @@ function App() {
 
   return (
     <div className="app">
-      <Header step={step} onBack={handleBack} />
+      <Header
+        step={step}
+        onBack={handleBack}
+      />
 
       <StepProgress step={step} />
 
       <main className="app-content">
         {step === 1 && (
-          <PersonSelection onSelect={handlePersonsSelect} />
+          <PersonSelection
+            onSelect={handlePersonsSelect}
+          />
         )}
 
         {step === 2 && (
           <PhotoEditor
             numberOfPersons={numberOfPersons}
+            people={people}
+            onPeopleUpdate={handlePeopleUpdate}
             onNext={handlePhotoEditorNext}
           />
         )}

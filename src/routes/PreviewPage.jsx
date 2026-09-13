@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
 import { Download, FileImage, FileText, LoaderCircle } from "lucide-react";
-
+import { useEffect, useState } from "react";
 import { generateA4Sheets } from "../utils/sheetGenerator";
 
 function PreviewPage({ people }) {
@@ -92,15 +91,6 @@ function PreviewPage({ people }) {
           <div className="sheet-preview-card" key={sheet.pageNumber}>
             <div className="sheet-preview-header">
               <strong>Page {sheet.pageNumber}</strong>
-
-              <button
-                type="button"
-                className="small-download-button"
-                onClick={() => downloadJpg(sheet, index)}
-              >
-                <Download size={15} />
-                JPG
-              </button>
             </div>
 
             <div className="sheet-image-container">

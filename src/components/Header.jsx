@@ -5,12 +5,12 @@ function Header({ step, onBack }) {
     <header className="app-header">
       <div className="header-left">
         <div className="brand-icon">
-          <Camera size={28} strokeWidth={2.5} />
+          <img src="/favicon.svg" alt="Passport Photo Maker" width="28" height="28" />
         </div>
 
         <div>
           <h1>Passport Photo Maker</h1>
-          <p>पासपोर्ट साइज फोटो मेकर</p>
+            <p>Make passport size photos easily</p> 
         </div>
       </div>
 
