@@ -223,7 +223,7 @@ This project is created for educational and development purposes.
 
 ## 👨‍💻 Author
 
-### Uday Pratap Singh
+### Uday Pratap Singh @udaypratapsingh005
 
 Frontend / Full Stack Developer
 
