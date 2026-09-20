@@ -14,7 +14,7 @@ function PhotoEditor({
   const [selectedPersonId, setSelectedPersonId] = useState(null);
 
   const maxQuantity = numberOfPersons === 1 ? 42 : 6;
-  const minQuantity = 4;
+  const minQuantity = 1;
 
   const uploadedCount = useMemo(
     () => people.filter((person) => person.photo).length,
@@ -116,8 +116,8 @@ function PhotoEditor({
           <Info size={18} />
           <p>
             {numberOfPersons === 1
-              ? "Single person mode: You can select between 4 and 42 copies."
-              : "Multiple person mode: Each person can select between 4 and 6 copies."}
+              ? "Single person mode: You can select between 1 and 42 copies."
+              : "Multiple person mode: Each person can select between 1 and 6 copies."}
           </p>
         </div>
 
