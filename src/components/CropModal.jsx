@@ -1481,75 +1481,13 @@ function CropModal({
           {/* CONTROLS */}
 
           <div className="crop-controls">
-            {/* CROP & FRAME */}
-
-            <div className="crop-control-heading">
-              <Crop size={18} />
-
-              <strong>
-                Crop &amp; Frame
-              </strong>
-            </div>
-
-            <div
-              style={{
-                padding:
-                  "12px 14px",
-
-                borderRadius:
-                  "10px",
-
-                background:
-                  "rgba(127, 127, 127, 0.08)",
-
-                fontSize:
-                  "13px",
-
-                lineHeight:
-                  1.5,
-              }}
-            >
-              <strong>
-                Passport Ratio:
-                35 × 45
-              </strong>
-
-              <p
-                style={{
-                  margin:
-                    "6px 0 0",
-
-                  opacity:
-                    0.75,
-                }}
-              >
-                Drag on the photo,
-                move the box, or
-                resize its corners.
-              </p>
-            </div>
-
-            <button
-              type="button"
-              className="reset-crop-button"
-              onClick={
-                handleResetCrop
-              }
-            >
-              <RotateCcw
-                size={15}
-              />
-
-              Reset Crop
-            </button>
-
             {/* IMAGE ADJUSTMENTS */}
 
             <div
               className="crop-control-heading"
               style={{
                 marginTop:
-                  "18px",
+                  "-15px",
               }}
             >
               <SlidersHorizontal
@@ -1947,38 +1885,6 @@ function CropModal({
 
               Reset Adjustments
             </button>
-
-            {/* TIP */}
-
-            <div
-              style={{
-                marginTop:
-                  "10px",
-
-                padding:
-                  "11px 13px",
-
-                borderRadius:
-                  "10px",
-
-                background:
-                  "rgba(99, 102, 241, 0.08)",
-
-                fontSize:
-                  "12px",
-
-                lineHeight:
-                  1.5,
-              }}
-            >
-              <strong>
-                Tip:
-              </strong>{" "}
-              Use zoom to position
-              the face precisely
-              inside the passport
-              frame.
-            </div>
           </div>
         </div>
 
