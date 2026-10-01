@@ -10,7 +10,7 @@ const COLUMNS = 6;
 
 // Compact spacing
 const COLUMN_GAP = 25;
-const ROW_GAP = 8;
+const ROW_GAP = 30;
 
 // Very small outer margins
 const SIDE_MARGIN = 20;
