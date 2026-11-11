@@ -1255,3 +1255,1362 @@
   color: #ffffff !important;
   opacity: 0.6 !important;
 }
+
+/* =================================
+   DAILY USE TOOLS SECTION
+================================= */
+
+.tools-section {
+  width: 100%;
+  margin-top: 20px;               
+}
+
+.tools-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin: 20px 5% 24px;
+  text-align: center;
+}
+
+.tools-heading-line {
+  flex: 1;
+  height: 2px;
+  background: #8b20f5;
+}
+
+.tools-heading-copy {
+  flex-shrink: 0;
+}
+
+.tools-heading-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #7000d9;
+}
+
+.tools-heading-title-row h2 {
+  margin: 0;
+  color: #191238;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.tools-heading-copy p {
+  margin: 6px 0 0;
+  color: #51486b;
+  font-size: 13px;
+}
+
+.tool-category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.tool-category-card {
+  min-width: 0;
+  padding: 9px;
+  border: 1px solid #ebe5f5;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(57, 25, 105, 0.07);
+}
+
+.tool-category-header {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: #f5eaff;
+}
+
+.tool-category-icon {
+  width: 60px;
+  height: 60px;
+  flex: 0 0 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  color: #fff;
+  background: linear-gradient(145deg, #ff5b8c, #e91e63);
+  box-shadow: 0 4px 9px rgba(233, 30, 99, 0.18);
+}
+
+.tool-category-title h3 {
+  margin: 0;
+  color: #191238;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.tool-category-title p {
+  margin: 6px 0 0;
+  color: #34294c;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.tool-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  padding: 11px 12px 13px;
+}
+
+.tool-preview-item {
+  min-height: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 4px;
+  border: 1px solid #eee9f5;
+  border-radius: 13px;
+  color: #8500ed;
+  background: linear-gradient(180deg, #fff, #fdfbff);
+  box-shadow: 0 2px 5px rgba(40, 20, 80, 0.06);
+  text-align: center;
+}
+
+.tool-preview-item span {
+  max-width: 100%;
+  color: #171323;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.tool-category-card.image .tool-category-icon {
+  background: linear-gradient(145deg, #5ce78d, #20bf83);
+  box-shadow: 0 4px 9px rgba(32, 191, 131, 0.18);
+}
+
+.tool-category-card.word .tool-category-icon {
+  background: linear-gradient(145deg, #4c91ff, #2362d8);
+  box-shadow: 0 4px 9px rgba(35, 98, 216, 0.18);
+}
+
+.tool-category-card.other .tool-category-icon {
+  background: linear-gradient(145deg, #ff9254, #f04470);
+  box-shadow: 0 4px 9px rgba(240, 68, 112, 0.18);
+}
+
+.view-tools-button {
+  width: min(280px, 88%);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto 10px;
+  padding: 9px 18px;
+  border: 0;
+  border-radius: 24px;
+  color: #fff;
+  background: linear-gradient(100deg, #8500ef, #6200d4);
+  box-shadow: 0 4px 10px rgba(112, 0, 217, 0.16);
+  font-size: 13px;
+  font-weight: 750;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.view-tools-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 15px rgba(112, 0, 217, 0.22);
+}
+
+.view-tools-button svg {
+  transition: transform 0.2s ease;
+}
+
+.view-tools-button .arrow-rotated {
+  transform: rotate(90deg);
+}
+
+.all-tools-list {
+  margin: 0 12px 14px;
+  padding: 14px;
+  border: 1px solid #eee6fa;
+  border-radius: 12px;
+  background: #fcfaff;
+}
+
+.all-tools-list h4 {
+  margin: 0 0 10px;
+  color: #27144d;
+  font-size: 13px;
+}
+
+.all-tools-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.all-tools-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 9px;
+  border: 1px solid #e9def8;
+  border-radius: 20px;
+  color: #5e299e;
+  background: #fff;
+  font-size: 11px;
+}
+
+@media (min-width: 1100px) {
+  .tool-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .tools-section-heading {
+    gap: 12px;
+    margin: 4px 0 18px;
+  }
+
+  .tools-heading-line {
+    display: none;
+  }
+
+  .tools-heading-title-row h2 {
+    font-size: 19px;
+  }
+
+  .tools-heading-copy p {
+    font-size: 11px;
+  }
+
+  .tool-category-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tool-category-header {
+    gap: 12px;
+    padding: 10px 12px;
+  }
+
+  .tool-category-icon {
+    width: 52px;
+    height: 52px;
+    flex-basis: 52px;
+  }
+
+  .tool-category-title h3 {
+    font-size: 17px;
+  }
+
+  .tool-preview-grid {
+    gap: 7px;
+    padding: 10px 5px 12px;
+  }
+
+  .tool-preview-item {
+    min-height: 84px;
+  }
+
+  .tool-preview-item span {
+    font-size: 10px;
+  }
+}
+
+/* ==============================
+   PDF TOOL WORKSPACE
+============================== */
+
+.pdf-workspace-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 12, 25, 0.65);
+  backdrop-filter: blur(5px);
+}
+
+.pdf-workspace {
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-workspace-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 25px;
+  border-bottom: 1px solid #eeeeF4;
+}
+
+.pdf-workspace-title {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #7c3aed;
+}
+
+.pdf-workspace-title span {
+  color: #8b8497;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.pdf-workspace-title h2 {
+  margin-top: 3px;
+  color: #211b2d;
+  font-size: 21px;
+}
+
+.pdf-close-button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #f3f0f8;
+  color: #4c405d;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.pdf-workspace-body {
+  padding: 25px;
+}
+
+.pdf-workspace-description {
+  margin-bottom: 20px;
+  color: #777181;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.pdf-upload-area {
+  min-height: 165px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 2px dashed #c9b4ed;
+  border-radius: 14px;
+  background: #faf7ff;
+  color: #803ce2;
+  cursor: pointer;
+  text-align: center;
+}
+
+.pdf-upload-area strong {
+  color: #30243f;
+  font-size: 15px;
+}
+
+.pdf-upload-area span {
+  color: #8a8197;
+  font-size: 12px;
+}
+
+.pdf-upload-area input {
+  display: none;
+}
+
+.pdf-selected-files {
+  margin-top: 22px;
+}
+
+.pdf-file-list-heading,
+.pdf-download-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: #352b43;
+  font-size: 14px;
+}
+
+.pdf-file-list-heading span {
+  color: #898292;
+  font-size: 12px;
+}
+
+.pdf-file-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid #eeeaf3;
+  border-radius: 10px;
+  color: #8545dc;
+}
+
+.pdf-file-details {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pdf-file-details strong {
+  overflow: hidden;
+  color: #30283a;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pdf-file-details span {
+  color: #88818f;
+  font-size: 11px;
+}
+
+.pdf-file-item button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: #fff0f0;
+  color: #e34d4d;
+  cursor: pointer;
+}
+
+.pdf-option {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 20px;
+  color: #42394e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pdf-option input,
+.pdf-option select {
+  width: 100%;
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid #e3ddea;
+  border-radius: 8px;
+  background: #fff;
+  color: #342b40;
+}
+
+.pdf-option input[type="range"] {
+  padding: 0;
+}
+
+.pdf-option small {
+  color: #91899a;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.pdf-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.pdf-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 12px;
+  margin-top: 18px;
+  border-radius: 9px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.pdf-error {
+  background: #fff0f0;
+  color: #c53e3e;
+}
+
+.pdf-success {
+  background: #edfbf1;
+  color: #24834a;
+}
+
+.pdf-process-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 22px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #933ff0, #6d35ce);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pdf-process-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.pdf-loader {
+  animation: pdf-spin 1s linear infinite;
+}
+
+@keyframes pdf-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pdf-download-section {
+  margin-top: 24px;
+}
+
+.pdf-download-heading button {
+  border: none;
+  background: transparent;
+  color: #813ce0;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pdf-download-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #eeeaf3;
+  border-radius: 9px;
+}
+
+.pdf-download-item > div,
+.pdf-download-item a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pdf-download-item > div {
+  min-width: 0;
+  color: #8545dc;
+}
+
+.pdf-download-item span {
+  overflow: hidden;
+  color: #403749;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pdf-download-item a {
+  flex-shrink: 0;
+  color: #7838d5;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 550px) {
+  .pdf-workspace-overlay {
+    padding: 10px;
+  }
+
+  .pdf-workspace {
+    max-height: 95vh;
+    border-radius: 14px;
+  }
+
+  .pdf-workspace-header,
+  .pdf-workspace-body {
+    padding: 17px;
+  }
+
+  .pdf-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pdf-download-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+
+/* =========================================
+   INTERACTIVE TOOL WORKSPACE
+========================================= */
+
+/* ---------- Tool Preview & Tags ---------- */
+
+.tool-preview-item {
+  border: 1px solid #eee8f8;
+  background: #fff;
+  color: #8500ed;
+  font: inherit;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tool-preview-item:hover {
+  border-color: #8b16ed;
+  background: #fbf7ff;
+  transform: translateY(-2px);
+}
+
+.all-tools-tags button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border: 1px solid #eadcf8;
+  border-radius: 8px;
+  background: #fff;
+  color: #4b2870;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.all-tools-tags button:hover {
+  border-color: #8500ed;
+  color: #8500ed;
+}
+
+/* ---------- Modal Overlay ---------- */
+
+.tool-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  background: rgba(25, 12, 39, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+/* ---------- Workspace Container ---------- */
+
+.tool-workspace {
+  width: min(650px, 100%);
+  max-height: min(88vh, 850px);
+  overflow: auto;
+
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 24px 80px rgba(25, 0, 55, 0.25);
+}
+
+/* ---------- Workspace Header ---------- */
+
+.tool-workspace-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 22px 25px;
+  border-bottom: 1px solid #eee7f5;
+  background: #fbf8ff;
+}
+
+.tool-workspace-kicker {
+  color: #8a20df;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.tool-workspace-header h2 {
+  margin: 5px 0 0;
+  color: #211334;
+  font-size: 22px;
+}
+
+.tool-close-button {
+  display: grid;
+  place-items: center;
+
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+
+  background: #f0e7fa;
+  color: #6f16b5;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tool-close-button:hover {
+  background: #e7d5f8;
+  transform: rotate(90deg);
+}
+
+/* ---------- Workspace Body ---------- */
+
+.tool-workspace-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px;
+}
+
+.tool-help-text {
+  margin: 0;
+  color: #655a70;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ---------- Upload Area ---------- */
+
+.tool-upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-height: 135px;
+  border: 2px dashed #d9c3ef;
+  border-radius: 13px;
+
+  background: #fcf9ff;
+  color: #7c20c9;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tool-upload-box span {
+  color: #8b8193;
+  font-size: 12px;
+}
+
+.tool-upload-box input {
+  max-width: 230px;
+  font-size: 12px;
+}
+
+/* ---------- Image Preview ---------- */
+
+.tool-image-preview {
+  display: block;
+
+  max-width: 100%;
+  max-height: 230px;
+  margin: auto;
+
+  object-fit: contain;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+/* ---------- Tool Controls ---------- */
+
+.tool-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 14px;
+}
+
+.tool-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  color: #44364f;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.tool-controls input,
+.tool-controls select {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 11px;
+
+  border: 1px solid #ddd2e8;
+  border-radius: 8px;
+
+  background: #fff;
+  color: #30243a;
+  font: inherit;
+}
+
+.tool-controls input:focus,
+.tool-controls select:focus {
+  outline: 2px solid rgba(139, 22, 237, 0.15);
+  border-color: #8b16ed;
+}
+
+.tool-controls input[type="range"] {
+  padding: 0;
+  accent-color: #8500ed;
+}
+
+/* ---------- Primary & Download Buttons ---------- */
+
+.tool-primary-button,
+.tool-download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  min-height: 43px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 9px;
+
+  background: linear-gradient(100deg, #8500ed, #a000db);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tool-primary-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(133, 0, 237, 0.2);
+}
+
+.tool-primary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tool-download-button {
+  align-self: flex-start;
+  background: #f1e7fc;
+  color: #7415bd;
+}
+
+.tool-download-button:hover {
+  background: #e8d7fa;
+}
+
+/* ---------- Text Tools ---------- */
+
+.tool-textarea {
+  width: 100%;
+  min-height: 175px;
+  padding: 13px;
+  resize: vertical;
+
+  border: 1px solid #ded2e9;
+  border-radius: 10px;
+  outline-color: #8b16ed;
+
+  color: #30243a;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ---------- Text Statistics ---------- */
+
+.text-tool-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.text-tool-stats span {
+  padding: 12px 8px;
+  border-radius: 9px;
+
+  background: #f7f1fc;
+  color: #5e3c79;
+  text-align: center;
+  font-size: 12px;
+}
+
+.text-tool-stats b {
+  display: block;
+  color: #8000df;
+  font-size: 19px;
+}
+
+/* ---------- Action Buttons ---------- */
+
+.tool-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tool-action-row button {
+  padding: 9px 12px;
+  border: 1px solid #dfc9f2;
+  border-radius: 8px;
+
+  background: #fff;
+  color: #7117b7;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tool-action-row button:hover {
+  border-color: #8500ed;
+  background: #fbf7ff;
+}
+
+/* ---------- Result & Status ---------- */
+
+.tool-result {
+  grid-column: 1 / -1;
+  padding: 12px 8px;
+  border-radius: 9px;
+
+  background: #f7f1fc;
+  color: #5e3c79;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.tool-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  margin: 0;
+  color: #21834a;
+  font-size: 13px;
+}
+
+/* ---------- Notice / Information ---------- */
+
+.tool-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+
+  padding: 17px;
+  border: 1px solid #f0d9a8;
+  border-radius: 11px;
+
+  background: #fffaf0;
+  color: #805619;
+}
+
+.tool-notice p {
+  margin: 6px 0;
+  color: #695b47;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.tool-notice small {
+  color: #88785f;
+  line-height: 1.5;
+}
+
+/* ---------- Frequency Counter ---------- */
+
+.frequency-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.frequency-list span {
+  padding: 7px 10px;
+  border-radius: 7px;
+
+  background: #f4edfb;
+  color: #5d3a77;
+  font-size: 12px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 600px) {
+  .tool-modal-backdrop {
+    padding: 8px;
+  }
+
+  .tool-workspace {
+    max-height: 94vh;
+    border-radius: 13px;
+  }
+
+  .tool-workspace-header,
+  .tool-workspace-body {
+    padding: 17px;
+  }
+
+  .text-tool-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================
+   TOOL WORKSPACE - FUNCTIONAL UPDATES
+========================================= */
+
+.tool-upload-box {
+  position: relative;
+  padding: 18px;
+  transition: 0.2s ease;
+}
+
+.tool-upload-box:hover {
+  border-color: #8500ed;
+  background: #f8f1ff;
+}
+
+.tool-upload-box input[type="file"] {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.tool-image-preview {
+  width: auto;
+  max-width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  background: #fafafa;
+}
+
+.tool-result {
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+}
+
+.tool-status {
+  padding: 11px 13px;
+  border-radius: 8px;
+  background: #f0fbf4;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.tool-action-row button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  transition: 0.2s ease;
+}
+
+.tool-action-row button:hover {
+  background: #f8f1ff;
+  border-color: #8500ed;
+}
+
+.tool-controls label {
+  min-width: 0;
+}
+
+.tool-controls input:focus,
+.tool-controls select:focus,
+.tool-textarea:focus {
+  outline: 2px solid rgba(133, 0, 237, 0.15);
+  border-color: #8500ed;
+}
+
+.tool-notice {
+  overflow-wrap: anywhere;
+}
+
+.tool-primary-button {
+  width: fit-content;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .tool-primary-button,
+  .tool-download-button {
+    width: 100%;
+  }
+
+  .tool-action-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tool-action-row button {
+    min-width: 0;
+    font-size: 12px;
+  }
+
+  .tool-controls {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   PDF WORKSPACE - FORM UI FIX
+========================================================= */
+
+/* ---------- PDF Settings Layout ---------- */
+
+.pdf-setting-field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 9px;
+  width: 100%;
+  margin: 18px 0;
+  color: var(--text-primary, #292338);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ---------- PDF Inputs & Dropdowns ---------- */
+
+.pdf-setting-field input,
+.pdf-setting-field select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid #ded6e8;
+  border-radius: 9px;
+  outline: none;
+  background: #fff;
+  color: #30263d;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pdf-setting-field input:focus,
+.pdf-setting-field select:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.12);
+}
+
+.pdf-setting-field input::placeholder {
+  color: #a49aaf;
+}
+
+.pdf-setting-field small {
+  color: #82778f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* ---------- Upload Box ---------- */
+
+.tool-upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 150px;
+  padding: 24px 18px;
+  border: 2px dashed #d8a4f5;
+  border-radius: 14px;
+  background: #fcf7ff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tool-upload-box:hover {
+  border-color: #a855f7;
+  background: #f8efff;
+}
+
+.tool-upload-box > svg {
+  color: #a000e8;
+}
+
+.tool-upload-box strong {
+  color: #8b00d4;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.tool-upload-box span {
+  color: #8b7d98;
+  font-size: 12px;
+}
+
+/* ---------- Custom File Input ---------- */
+
+.tool-upload-box input[type="file"] {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin-top: 2px;
+  color: #8b00d4;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tool-upload-box input[type="file"]::file-selector-button {
+  padding: 9px 16px;
+  margin-right: 9px;
+  border: none;
+  border-radius: 7px;
+  background: #8b00d4;
+  color: #fff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tool-upload-box input[type="file"]::file-selector-button:hover {
+  background: #7200b0;
+}
+
+/* ---------- Selected PDF Files ---------- */
+
+.pdf-selected-files {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.pdf-file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #e9e1ef;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.pdf-file-info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.pdf-file-info > svg {
+  flex-shrink: 0;
+  color: #9400d3;
+}
+
+.pdf-file-info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.pdf-file-info strong {
+  overflow-wrap: anywhere;
+  color: #30263d;
+  font-size: 13px;
+}
+
+.pdf-file-info small {
+  color: #8b7d98;
+  font-size: 11px;
+}
+
+.pdf-file-item > button {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 8px;
+  background: #fff0f0;
+  color: #dc3636;
+  cursor: pointer;
+}
+
+.pdf-clear-files {
+  align-self: flex-start;
+  padding: 7px 0;
+  border: none;
+  background: transparent;
+  color: #a000d4;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------- Compression Result ---------- */
+
+.pdf-setting-field .tool-result {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #e9def4;
+  border-radius: 10px;
+  background: #fbf7ff;
+  color: #51445f;
+  line-height: 1.5;
+}
+
+/* ---------- Mobile Responsive ---------- */
+
+@media (max-width: 600px) {
+  .tool-upload-box {
+    min-height: 135px;
+    padding: 20px 12px;
+  }
+
+  .pdf-setting-field {
+    margin: 15px 0;
+  }
+
+  .pdf-setting-field input,
+  .pdf-setting-field select {
+    height: 44px;
+  }
+
+  .pdf-file-item {
+    padding: 10px;
+  }
+}

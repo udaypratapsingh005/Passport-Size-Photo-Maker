@@ -43,6 +43,7 @@ function PersonSelection({ onSelect }) {
           <strong>10 people</strong> in one batch.
         </div>
       </div>
+
     </section>
   );
 }
